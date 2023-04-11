@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebRTC 1</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <div id="intro">
+        <h2>WebRTC with no signaling.</h2>
+    </div>
+    <div id="videos">
+        <video id="user-1" class="video-player" autoplay playsinline></video>
+        <video id="user-2" class="video-player" autoplay playsinline></video>
+    </div>
+
+    <div class="step">
+        <p>
+            <strong>Step 1:</strong> User 1, click "Create offer" to generate SDP
+            offer and copy offer from text area below.
+        </p>
+        <button id="create-offer">Create Offer</button>
+    </div>
+
+    <label>SDP OFFER:</label>
+    <textarea id="offer-sdp" placeholder="User 2, paste SDP offer here..."></textarea>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
